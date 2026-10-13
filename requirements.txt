@@ -1,0 +1,6 @@
+Flask==3.1.3
+requests==2.34.2
+Pillow==12.3.0
+# dev / tests
+pytest
+playwright  # only to regenerate the fake sample delivery note
