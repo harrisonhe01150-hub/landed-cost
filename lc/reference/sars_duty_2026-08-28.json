@@ -1,0 +1,36 @@
+{
+  "title": "SARS Schedule 1 Part 1, General rate (applies to goods originating in China)",
+  "edition": "2026-08-28",
+  "source": "https://www.sars.gov.za/legal-lprim-ce-sch1p1chpt1-to-99-schedule-no-1-part-1-chapters-1-to-99/",
+  "anti_dumping_check": "Schedule 2 dated 2026-10-09 lists no anti-dumping, countervailing or safeguard duty on these headings.",
+  "caveat": "Reference only. The rate depends on the exact classification (fibre, knitted vs woven, rubber vs PVC). Confirm with your clearing agent or a SARS tariff determination. Rates change by Government Gazette.",
+  "rates": [
+    {"category": "棉袜 cotton socks", "hs": "6115.95", "rate": 0.45},
+    {"category": "化纤袜 synthetic socks", "hs": "6115.96", "rate": 0.40},
+    {"category": "连裤袜/打底裤袜 tights", "hs": "6115.21/.22/.29", "rate": 0.45},
+    {"category": "针织睡衣 knitted pyjamas", "hs": "6107.2x / 6108.3x", "rate": 0.40},
+    {"category": "针织运动套装 knitted tracksuits", "hs": "6112.11/.12/.19", "rate": 0.45},
+    {"category": "针织外套/风衣 knitted anoraks", "hs": "6101 / 6102", "rate": 0.40},
+    {"category": "梭织外套 woven overcoats/anoraks", "hs": "6201 / 6202", "rate": 0.45},
+    {"category": "夹克/西装上衣 jackets & blazers", "hs": "6103.3x / 6104.3x / 6203.3x / 6204.3x", "rate": 0.45},
+    {"category": "收腹裤/塑身衣 girdles & shapewear", "hs": "6212.20", "rate": 0.40},
+    {"category": "纺织桌布 textile tablecloths", "hs": "6302.40 / 6302.5x", "rate": 0.30},
+    {"category": "塑料制品(含PVC桌布?) plastic tableware", "hs": "3924.10 / 3924.90 (PVC tablecloth classification unconfirmed)", "rate": 0.20},
+    {"category": "橡胶热水袋 rubber hot water bottles", "hs": "4014.90.50", "rate": 0.0},
+    {"category": "针织帽 knitted hats", "hs": "6505.00.90", "rate": 0.30},
+    {"category": "陶瓷杯 ceramic & porcelain cups", "hs": "6911.10 / 6912.00", "rate": 0.30}
+  ],
+  "vat": {
+    "rate": 0.15,
+    "base": "ATV = customs value (FOB) + 10% of customs value + customs duty",
+    "source": "https://www.sars.gov.za/faq/faq-how-is-vat-calculated-on-imported-goods/"
+  },
+  "valuation": {
+    "basis": "FOB: price at the Chinese port, including inland freight in China; international freight and insurance excluded only if shown separately and documented",
+    "source": "https://www.sars.gov.za/sc-cr-a-05-method-1-valuation-of-imports-external-directive"
+  },
+  "allin_example": {
+    "note": "How forwarders tier all-in (双清包税) prices: one Shenzhen forwarder's published South Africa sea rates, 2026-04-23, self-collect in Johannesburg, RMB per CBM: general goods 1,450; clothing, knitted hats, fabric 3,450. Your forwarder's prices will differ.",
+    "source": "http://www.xinexpress.com/Daily/ZA-202604AB.html"
+  }
+}

@@ -1,0 +1,150 @@
+{
+ "rows": [
+  {
+   "sku": "BZ-987",
+   "name": "陶瓷马克杯 带盖勺",
+   "spec": "350ml",
+   "pcs_per_bale": 72,
+   "bales": 2,
+   "qty_pcs": 144,
+   "unit_price_rmb": 6.95,
+   "amount_rmb": 1000.8,
+   "carton_cm": "45×35×30",
+   "cbm": null
+  },
+  {
+   "sku": "MZ-624",
+   "name": "2L 加厚橡胶热水袋 带针织套",
+   "spec": "2000ml",
+   "pcs_per_bale": 60,
+   "bales": 2,
+   "qty_pcs": 120,
+   "unit_price_rmb": 8.95,
+   "amount_rmb": 1074.0,
+   "carton_cm": "50×40×38",
+   "cbm": null
+  },
+  {
+   "sku": "K-441",
+   "name": "针织毛线帽",
+   "spec": "均码 混色",
+   "pcs_per_bale": 240,
+   "bales": 3,
+   "qty_pcs": 720,
+   "unit_price_rmb": 2.6,
+   "amount_rmb": 1872.0,
+   "carton_cm": "60×40×40",
+   "cbm": null
+  },
+  {
+   "sku": "SF-955",
+   "name": "加绒连帽外套",
+   "spec": "L-4XL",
+   "pcs_per_bale": 50,
+   "bales": 4,
+   "qty_pcs": 200,
+   "unit_price_rmb": 53.9,
+   "amount_rmb": 10780.0,
+   "carton_cm": "70×50×50",
+   "cbm": null
+  },
+  {
+   "sku": "HB-171",
+   "name": "坑条休闲运动套装",
+   "spec": "S-XL 4色",
+   "pcs_per_bale": 120,
+   "bales": 5,
+   "qty_pcs": 600,
+   "unit_price_rmb": 20.85,
+   "amount_rmb": 12510.0,
+   "carton_cm": "60×45×40",
+   "cbm": null
+  },
+  {
+   "sku": "BZ-887",
+   "name": "男士纯棉中筒袜",
+   "spec": "均码 黑白灰",
+   "pcs_per_bale": 600,
+   "bales": 1,
+   "qty_pcs": 600,
+   "unit_price_rmb": 1.95,
+   "amount_rmb": 1170.0,
+   "carton_cm": "55×40×35",
+   "cbm": null
+  },
+  {
+   "sku": "SF-182",
+   "name": "高腰收腹打底短裤",
+   "spec": "均码 黑肤",
+   "pcs_per_bale": 240,
+   "bales": 2,
+   "qty_pcs": 480,
+   "unit_price_rmb": 5.1,
+   "amount_rmb": 2448.0,
+   "carton_cm": "50×35×30",
+   "cbm": null
+  },
+  {
+   "sku": "YG-481",
+   "name": "珊瑚绒卡通睡衣套装",
+   "spec": "M-XXL 混色",
+   "pcs_per_bale": 60,
+   "bales": 2,
+   "qty_pcs": 120,
+   "unit_price_rmb": 21.35,
+   "amount_rmb": 2562.0,
+   "carton_cm": "60×50×45",
+   "cbm": null
+  },
+  {
+   "sku": "MZ-984",
+   "name": "女士船袜",
+   "spec": "均码 混色",
+   "pcs_per_bale": 600,
+   "bales": 1,
+   "qty_pcs": 600,
+   "unit_price_rmb": 1.4,
+   "amount_rmb": 840.0,
+   "carton_cm": "50×40×30",
+   "cbm": null
+  },
+  {
+   "sku": "YG-551",
+   "name": "PVC 印花桌布",
+   "spec": "137×180cm",
+   "pcs_per_bale": 200,
+   "bales": 4,
+   "qty_pcs": 800,
+   "unit_price_rmb": 4.2,
+   "amount_rmb": 3360.0,
+   "carton_cm": "50×40×30",
+   "cbm": null
+  },
+  {
+   "sku": "K-879",
+   "name": "瑜伽健身裤",
+   "spec": "S-XL 6色",
+   "pcs_per_bale": 100,
+   "bales": 5,
+   "qty_pcs": 500,
+   "unit_price_rmb": 10.55,
+   "amount_rmb": 5275.0,
+   "carton_cm": "55×40×35",
+   "cbm": null
+  },
+  {
+   "sku": "YG-842",
+   "name": "儿童卡通棉袜",
+   "spec": "S-L 5双装",
+   "pcs_per_bale": 400,
+   "bales": 5,
+   "qty_pcs": 2000,
+   "unit_price_rmb": 1.75,
+   "amount_rmb": 3500.0,
+   "carton_cm": "50×40×35",
+   "cbm": null
+  }
+ ],
+ "total_amount_rmb": 46391.8,
+ "total_cbm": null
+}

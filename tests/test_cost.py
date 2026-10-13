@@ -62,3 +62,28 @@ def test_check_flags_rows_that_do_not_add_up():
     out = extract.check(doc)
     assert any("金额" in p for p in out["problems"])
     assert any("合计" in p for p in out["problems"])
+
+
+def test_allin_rate_per_category_with_default_fallback():
+    s = Settings(fx_zar_per_cny=2.5, allin_rate_per_cbm=1450, allin_rate_currency="CNY",
+                 allin_rates={"服装 clothing": 3450})
+    clothing, general = landed([_row(category="服装 clothing"), _row(category="other")], s)
+    assert clothing["breakdown_per_piece"]["shipping_allin"] == pytest.approx(3450 * 2.5 * 0.27 / 240, abs=0.01)
+    assert general["breakdown_per_piece"]["shipping_allin"] == pytest.approx(1450 * 2.5 * 0.27 / 240, abs=0.01)
+    assert s.categories() == ["服装 clothing"]
+
+
+def test_missing_allin_rate_warns_instead_of_silently_zero():
+    (r,) = landed([_row(category="x")], Settings(fx_zar_per_cny=2.5))
+    assert "warning" in r
+
+
+def test_printed_row_volume_beats_carton_size():
+    (r,) = landed([_row(cbm=0.5)], Settings(fx_zar_per_cny=2.5, allin_rate_per_cbm=6000))
+    assert r["cbm"] == 0.5
+
+
+def test_check_flags_row_volumes_that_do_not_add_up_to_the_printed_total():
+    rows = [dict(ROW, cbm=0.27), dict(ROW, cbm=25.1)]  # 25.1 is a gross weight read into the volume column
+    out = extract.check({"rows": rows, "total_amount_rmb": 11280.0, "total_cbm": 0.55})
+    assert any("m³" in p for p in out["problems"])

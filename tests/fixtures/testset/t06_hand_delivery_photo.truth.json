@@ -1,0 +1,78 @@
+{
+ "rows": [
+  {
+   "sku": "W-404",
+   "name": "儿童卡通棉袜",
+   "spec": "S-L 5双装",
+   "pcs_per_bale": 200,
+   "bales": 4,
+   "qty_pcs": 800,
+   "unit_price_rmb": 2.1,
+   "amount_rmb": 1680.0,
+   "carton_cm": "50×40×35",
+   "cbm": null
+  },
+  {
+   "sku": "HB-764",
+   "name": "PVC 印花桌布",
+   "spec": "137×180cm",
+   "pcs_per_bale": 200,
+   "bales": 3,
+   "qty_pcs": 600,
+   "unit_price_rmb": 4.1,
+   "amount_rmb": 2460.0,
+   "carton_cm": "50×40×30",
+   "cbm": null
+  },
+  {
+   "sku": "W-486",
+   "name": "陶瓷马克杯 带盖勺",
+   "spec": "350ml",
+   "pcs_per_bale": 72,
+   "bales": 4,
+   "qty_pcs": 288,
+   "unit_price_rmb": 5.4,
+   "amount_rmb": 1555.2,
+   "carton_cm": "45×35×30",
+   "cbm": null
+  },
+  {
+   "sku": "YG-633",
+   "name": "坑条休闲运动套装",
+   "spec": "S-XL 4色",
+   "pcs_per_bale": 100,
+   "bales": 4,
+   "qty_pcs": 400,
+   "unit_price_rmb": 25.1,
+   "amount_rmb": 10040.0,
+   "carton_cm": "60×45×40",
+   "cbm": null
+  },
+  {
+   "sku": "HB-287",
+   "name": "珊瑚绒卡通睡衣套装",
+   "spec": "M-XXL 混色",
+   "pcs_per_bale": 120,
+   "bales": 2,
+   "qty_pcs": 240,
+   "unit_price_rmb": 27.15,
+   "amount_rmb": 6516.0,
+   "carton_cm": "60×50×45",
+   "cbm": null
+  },
+  {
+   "sku": "W-144",
+   "name": "瑜伽健身裤",
+   "spec": "S-XL 6色",
+   "pcs_per_bale": 200,
+   "bales": 3,
+   "qty_pcs": 600,
+   "unit_price_rmb": 11.15,
+   "amount_rmb": 6690.0,
+   "carton_cm": "55×40×35",
+   "cbm": null
+  }
+ ],
+ "total_amount_rmb": 28941.2,
+ "total_cbm": null
+}

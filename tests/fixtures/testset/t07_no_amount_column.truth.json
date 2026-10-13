@@ -1,0 +1,66 @@
+{
+ "rows": [
+  {
+   "sku": "K-562",
+   "name": "陶瓷马克杯 带盖勺",
+   "spec": "350ml",
+   "pcs_per_bale": 72,
+   "bales": 3,
+   "qty_pcs": 216,
+   "unit_price_rmb": 7.65,
+   "amount_rmb": null,
+   "carton_cm": "45×35×30",
+   "cbm": null
+  },
+  {
+   "sku": "TB-778",
+   "name": "儿童卡通棉袜",
+   "spec": "S-L 5双装",
+   "pcs_per_bale": 200,
+   "bales": 5,
+   "qty_pcs": 1000,
+   "unit_price_rmb": 2.6,
+   "amount_rmb": null,
+   "carton_cm": "50×40×35",
+   "cbm": null
+  },
+  {
+   "sku": "MZ-838",
+   "name": "加绒连帽外套",
+   "spec": "L-4XL",
+   "pcs_per_bale": 50,
+   "bales": 2,
+   "qty_pcs": 100,
+   "unit_price_rmb": 51.45,
+   "amount_rmb": null,
+   "carton_cm": "70×50×50",
+   "cbm": null
+  },
+  {
+   "sku": "K-491",
+   "name": "高腰收腹打底短裤",
+   "spec": "均码 黑肤",
+   "pcs_per_bale": 240,
+   "bales": 4,
+   "qty_pcs": 960,
+   "unit_price_rmb": 3.9,
+   "amount_rmb": null,
+   "carton_cm": "50×35×30",
+   "cbm": null
+  },
+  {
+   "sku": "BZ-157",
+   "name": "珊瑚绒卡通睡衣套装",
+   "spec": "M-XXL 混色",
+   "pcs_per_bale": 60,
+   "bales": 5,
+   "qty_pcs": 300,
+   "unit_price_rmb": 24.6,
+   "amount_rmb": null,
+   "carton_cm": "60×50×45",
+   "cbm": null
+  }
+ ],
+ "total_amount_rmb": 20521.4,
+ "total_cbm": null
+}

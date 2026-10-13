@@ -14,8 +14,9 @@ class Settings:
     fx_zar_per_cny: float  # rand per yuan, from the owner's bank or a reference rate
     mode: str = "allin"  # "allin" | "itemized"
     # allin
-    allin_rate_per_cbm: float = 0.0
+    allin_rate_per_cbm: float = 0.0  # default rate, used for any category without its own
     allin_rate_currency: str = "ZAR"  # "ZAR" | "CNY"
+    allin_rates: dict = field(default_factory=dict)  # category -> rate per CBM (forwarders charge clothing more)
     # itemized
     freight_per_cbm_zar: float = 0.0
     clearing_fixed_zar: float = 0.0  # broker + port charges for the whole shipment
@@ -32,13 +33,19 @@ class Settings:
     def to_dict(self) -> dict:
         return asdict(self)
 
+    def categories(self) -> list[str]:
+        """The owner's own category list for this mode (what the model may choose from)."""
+        return list(self.allin_rates if self.mode == "allin" else self.duty_rates)
+
 
 def _round_up(x: float, step: float) -> float:
     return math.ceil(x / step - 1e-9) * step if step else x
 
 
 def row_cbm(row: dict) -> float | None:
-    """Volume of one row's goods: carton size x number of bales/cartons."""
+    """Volume of one row's goods: the printed 体积 if there is one, else carton size x number of bales/cartons."""
+    if row.get("cbm"):
+        return row["cbm"]
     if row.get("cbm_per_bale") and row.get("bales"):
         return row["cbm_per_bale"] * row["bales"]
     return None
@@ -76,8 +83,11 @@ def landed(rows: list[dict], s: Settings, doc_total_cbm: float | None = None) ->
         goods = price_rmb * s.fx_zar_per_cny
         parts = {"goods": goods, "agent": goods * s.agent_commission_pct / 100}
         if s.mode == "allin":
-            rate = s.allin_rate_per_cbm * (s.fx_zar_per_cny if s.allin_rate_currency == "CNY" else 1)
+            base = s.allin_rates.get(r.get("category", ""), s.allin_rate_per_cbm)
+            rate = base * (s.fx_zar_per_cny if s.allin_rate_currency == "CNY" else 1)
             parts["shipping_allin"] = rate * cbm / q
+            if not base:
+                r = {**r, "warning": f"no all-in rate for category '{r.get('category', '')}'"}
         else:
             duty_rate = s.duty_rates.get(r.get("category", ""), None)
             parts["freight"] = (s.freight_per_cbm_zar + s.local_transport_per_cbm_zar) * cbm / q

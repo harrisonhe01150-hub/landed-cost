@@ -1,0 +1,78 @@
+{
+ "rows": [
+  {
+   "sku": "HB-804",
+   "name": "针织毛线帽",
+   "spec": "均码 混色",
+   "pcs_per_bale": 240,
+   "bales": 3,
+   "qty_pcs": 720,
+   "unit_price_rmb": 2.55,
+   "amount_rmb": 1836.0,
+   "carton_cm": "60×40×40",
+   "cbm": null
+  },
+  {
+   "sku": "SF-759",
+   "name": "瑜伽健身裤",
+   "spec": "S-XL 6色",
+   "pcs_per_bale": 200,
+   "bales": 2,
+   "qty_pcs": 400,
+   "unit_price_rmb": 8.7,
+   "amount_rmb": 3480.0,
+   "carton_cm": "55×40×35",
+   "cbm": null
+  },
+  {
+   "sku": "BZ-244",
+   "name": "陶瓷马克杯 带盖勺",
+   "spec": "350ml",
+   "pcs_per_bale": 72,
+   "bales": 1,
+   "qty_pcs": 72,
+   "unit_price_rmb": 5.9,
+   "amount_rmb": 424.8,
+   "carton_cm": "45×35×30",
+   "cbm": null
+  },
+  {
+   "sku": "SF-530",
+   "name": "加绒连帽外套",
+   "spec": "L-4XL",
+   "pcs_per_bale": 30,
+   "bales": 4,
+   "qty_pcs": 120,
+   "unit_price_rmb": 57.55,
+   "amount_rmb": 6906.0,
+   "carton_cm": "70×50×50",
+   "cbm": null
+  },
+  {
+   "sku": "K-139",
+   "name": "PVC 印花桌布",
+   "spec": "137×180cm",
+   "pcs_per_bale": 100,
+   "bales": 3,
+   "qty_pcs": 300,
+   "unit_price_rmb": 3.7,
+   "amount_rmb": 1110.0,
+   "carton_cm": "50×40×30",
+   "cbm": null
+  },
+  {
+   "sku": "SF-322",
+   "name": "女士船袜",
+   "spec": "均码 混色",
+   "pcs_per_bale": 1200,
+   "bales": 1,
+   "qty_pcs": 1200,
+   "unit_price_rmb": 0.85,
+   "amount_rmb": 1020.0,
+   "carton_cm": "50×40×30",
+   "cbm": null
+  }
+ ],
+ "total_amount_rmb": 14776.8,
+ "total_cbm": null
+}

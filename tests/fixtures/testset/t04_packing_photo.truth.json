@@ -1,0 +1,90 @@
+{
+ "rows": [
+  {
+   "sku": "W-387",
+   "name": "女士船袜",
+   "spec": "均码 混色",
+   "pcs_per_bale": 600,
+   "bales": 1,
+   "qty_pcs": 600,
+   "unit_price_rmb": 0.85,
+   "amount_rmb": 510.0,
+   "carton_cm": "",
+   "cbm": 0.06
+  },
+  {
+   "sku": "BZ-273",
+   "name": "儿童卡通棉袜",
+   "spec": "S-L 5双装",
+   "pcs_per_bale": 400,
+   "bales": 4,
+   "qty_pcs": 1600,
+   "unit_price_rmb": 1.8,
+   "amount_rmb": 2880.0,
+   "carton_cm": "",
+   "cbm": 0.28
+  },
+  {
+   "sku": "HB-781",
+   "name": "PVC 印花桌布",
+   "spec": "137×180cm",
+   "pcs_per_bale": 100,
+   "bales": 3,
+   "qty_pcs": 300,
+   "unit_price_rmb": 4.25,
+   "amount_rmb": 1275.0,
+   "carton_cm": "",
+   "cbm": 0.18
+  },
+  {
+   "sku": "SF-706",
+   "name": "高腰收腹打底短裤",
+   "spec": "均码 黑肤",
+   "pcs_per_bale": 240,
+   "bales": 3,
+   "qty_pcs": 720,
+   "unit_price_rmb": 4.95,
+   "amount_rmb": 3564.0,
+   "carton_cm": "",
+   "cbm": 0.158
+  },
+  {
+   "sku": "W-490",
+   "name": "陶瓷马克杯 带盖勺",
+   "spec": "350ml",
+   "pcs_per_bale": 72,
+   "bales": 5,
+   "qty_pcs": 360,
+   "unit_price_rmb": 6.95,
+   "amount_rmb": 2502.0,
+   "carton_cm": "",
+   "cbm": 0.236
+  },
+  {
+   "sku": "TB-169",
+   "name": "坑条休闲运动套装",
+   "spec": "S-XL 4色",
+   "pcs_per_bale": 120,
+   "bales": 1,
+   "qty_pcs": 120,
+   "unit_price_rmb": 25.3,
+   "amount_rmb": 3036.0,
+   "carton_cm": "",
+   "cbm": 0.108
+  },
+  {
+   "sku": "SF-488",
+   "name": "加绒连帽外套",
+   "spec": "L-4XL",
+   "pcs_per_bale": 30,
+   "bales": 3,
+   "qty_pcs": 90,
+   "unit_price_rmb": 38.85,
+   "amount_rmb": 3496.5,
+   "carton_cm": "",
+   "cbm": 0.525
+  }
+ ],
+ "total_amount_rmb": 17263.5,
+ "total_cbm": 1.547
+}

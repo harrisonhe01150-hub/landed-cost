@@ -1,0 +1,66 @@
+{
+ "rows": [
+  {
+   "sku": "K-921",
+   "name": "坑条休闲运动套装",
+   "spec": "S-XL 4色",
+   "pcs_per_bale": 120,
+   "bales": 3,
+   "qty_pcs": 360,
+   "unit_price_rmb": 16.0,
+   "amount_rmb": 5760.0,
+   "carton_cm": "60×45×40",
+   "cbm": null
+  },
+  {
+   "sku": "BZ-657",
+   "name": "PVC 印花桌布",
+   "spec": "137×180cm",
+   "pcs_per_bale": 100,
+   "bales": 5,
+   "qty_pcs": 500,
+   "unit_price_rmb": 6.1,
+   "amount_rmb": 3050.0,
+   "carton_cm": "50×40×30",
+   "cbm": null
+  },
+  {
+   "sku": "SF-525",
+   "name": "针织毛线帽",
+   "spec": "均码 混色",
+   "pcs_per_bale": 480,
+   "bales": 1,
+   "qty_pcs": 480,
+   "unit_price_rmb": 4.35,
+   "amount_rmb": 2088.0,
+   "carton_cm": "60×40×40",
+   "cbm": null
+  },
+  {
+   "sku": "W-834",
+   "name": "加绒连帽外套",
+   "spec": "L-4XL",
+   "pcs_per_bale": 50,
+   "bales": 1,
+   "qty_pcs": 50,
+   "unit_price_rmb": 41.1,
+   "amount_rmb": 2055.0,
+   "carton_cm": "70×50×50",
+   "cbm": null
+  },
+  {
+   "sku": "BZ-982",
+   "name": "陶瓷马克杯 带盖勺",
+   "spec": "350ml",
+   "pcs_per_bale": 72,
+   "bales": 3,
+   "qty_pcs": 216,
+   "unit_price_rmb": 4.65,
+   "amount_rmb": 1004.4,
+   "carton_cm": "45×35×30",
+   "cbm": null
+  }
+ ],
+ "total_amount_rmb": 13957.4,
+ "total_cbm": null
+}

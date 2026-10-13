@@ -1,0 +1,66 @@
+{
+ "rows": [
+  {
+   "sku": "SF-947",
+   "name": "PVC 印花桌布",
+   "spec": "137×180cm",
+   "pcs_per_bale": 100,
+   "bales": 4,
+   "qty_pcs": 400,
+   "unit_price_rmb": 5.2,
+   "amount_rmb": 2080.0,
+   "carton_cm": "50×40×30",
+   "cbm": null
+  },
+  {
+   "sku": "K-836",
+   "name": "瑜伽健身裤",
+   "spec": "S-XL 6色",
+   "pcs_per_bale": 100,
+   "bales": 5,
+   "qty_pcs": 500,
+   "unit_price_rmb": 8.5,
+   "amount_rmb": 4250.0,
+   "carton_cm": "55×40×35",
+   "cbm": null
+  },
+  {
+   "sku": "K-562",
+   "name": "女士船袜",
+   "spec": "均码 混色",
+   "pcs_per_bale": 600,
+   "bales": 2,
+   "qty_pcs": 1200,
+   "unit_price_rmb": 1.1,
+   "amount_rmb": 1320.0,
+   "carton_cm": "50×40×30",
+   "cbm": null
+  },
+  {
+   "sku": "K-284",
+   "name": "高腰收腹打底短裤",
+   "spec": "均码 黑肤",
+   "pcs_per_bale": 240,
+   "bales": 2,
+   "qty_pcs": 480,
+   "unit_price_rmb": 3.65,
+   "amount_rmb": 1752.0,
+   "carton_cm": "50×35×30",
+   "cbm": null
+  },
+  {
+   "sku": "MZ-844",
+   "name": "陶瓷马克杯 带盖勺",
+   "spec": "350ml",
+   "pcs_per_bale": 72,
+   "bales": 4,
+   "qty_pcs": 288,
+   "unit_price_rmb": 5.65,
+   "amount_rmb": 1627.2,
+   "carton_cm": "45×35×30",
+   "cbm": null
+  }
+ ],
+ "total_amount_rmb": 11029.2,
+ "total_cbm": null
+}
