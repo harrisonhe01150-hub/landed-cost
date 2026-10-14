@@ -112,10 +112,26 @@ def row_volume(r: dict) -> float | None:
     return None
 
 
+NULLISH = {"null", "none", "n/a", "na", "nil", "-", "—", "无"}
+TEXT_FIELDS = ("sku", "name", "spec", "carton_cm", "carton_no", "unit", "category")
+
+
+def _text(v) -> str:
+    """Models sometimes write the word 'null' into a string field; that must read as empty, not as a unit or a name."""
+    s = "" if v is None else str(v).strip()
+    return "" if s.lower() in NULLISH else s
+
+
 def check(doc: dict) -> dict:
     """Cross-check the transcription. Returns the doc with per-row 'problems' and a top-level 'problems' list."""
     problems, total = [], 0.0
+    for k in ("supplier", "date", "doc_no"):
+        doc[k] = _text(doc.get(k))
     rows = doc.get("rows", [])
+    for r in rows:
+        for k in TEXT_FIELDS:
+            if k in r:
+                r[k] = _text(r[k])
     for i, r in enumerate(rows, 1):
         rp = []
         per, n, q, p, a = (r.get(k) for k in ("pcs_per_bale", "bales", "qty_pcs", "unit_price_rmb", "amount_rmb"))

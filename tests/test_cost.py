@@ -160,3 +160,9 @@ def test_readiness_lists_what_is_missing_per_mode():  # review C18
     assert Settings(fx_zar_per_cny=2.5).missing() == ["包税价/方"]
     assert Settings(fx_zar_per_cny=2.5, mode="itemized").missing() == ["海运 R/方", "关税率"]
     assert Settings(fx_zar_per_cny=2.5, allin_rates={"x": 1}).missing() == []
+
+
+def test_the_word_null_from_the_model_is_treated_as_empty():  # seen in the demo: "R170.97/null", supplier "null"
+    doc = extract.check({"supplier": "null", "rows": [dict(ROW, unit="null", spec="None")], "total_amount_rmb": 5640.0})
+    assert doc["supplier"] == "" and doc["rows"][0]["unit"] == "" and doc["rows"][0]["unit_label"] == "件"
+    assert doc["rows"][0]["spec"] == ""

@@ -1,6 +1,6 @@
 """Landed Cost: photo of a supplier delivery note -> landed cost per unit in rand -> wholesale price per bale.
 
-Run:  python app.py      then open http://127.0.0.1:5060
+Run:  python app.py      then open http://127.0.0.1:8810
 Everything (photos, prices, settings) stays in ./data on this computer. The vision models run in local Ollama.
 """
 import json
@@ -24,7 +24,7 @@ from flask import Flask, abort, jsonify, redirect, render_template_string, reque
 from lc import classify, extract
 from lc.cost import DEFAULT_CATEGORY, Settings, landed
 
-PORT = 5060
+PORT = 8810  # not 5060: browsers refuse SIP ports 5060/5061 (ERR_UNSAFE_PORT)
 DATA = Path(os.environ.get("LC_DATA", Path(__file__).resolve().parent / "data"))
 DOCS = DATA / "docs"
 SETTINGS = DATA / "settings.json"
@@ -426,10 +426,10 @@ HOME_HTML = """<!doctype html><html><head><meta charset=utf-8><meta name=viewpor
 
 DOC_HTML = """<!doctype html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1">
 <title>{{d.doc_no or 'Delivery note'}} · Landed Cost</title><style>""" + CSS + """
-.two{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,8fr);gap:16px}.photo img{width:100%;border-radius:8px;border:1px solid var(--line)}
+.two{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,9fr);gap:16px}.photo img{width:100%;border-radius:8px;border:1px solid var(--line)}
 .edit td{padding:3px}.edit input,.edit select{padding:4px 5px;font-size:13px;min-width:4.5em}.edit input[type=checkbox]{min-width:0;width:auto}
-.edit input[name^=name]{min-width:10em}.res td{font-size:14px}.res td:first-child{min-width:9em}.big{font-weight:700}.bd{font-size:12px;color:var(--mute)}
-@media(max-width:900px){.two{grid-template-columns:minmax(0,1fr)}}</style></head><body><main>
+.edit input[name^=name]{min-width:10em}.edit select{min-width:9em}.res td{font-size:14px}.res td:first-child{min-width:9em}.big{font-weight:700}.bd{font-size:12px;color:var(--mute)}
+@media(max-width:1300px){.two{grid-template-columns:minmax(0,1fr)}.photo img{max-height:70vh;object-fit:contain}}</style></head><body><main>
 <div class=top><div><a href=/>← 全部</a><h1>{{d.supplier or '未命名单据'}} <span class=mute>{{d.doc_no}} · {{d.date}}</span></h1></div><a href="/settings?next=/doc/{{id}}">设置 Settings</a></div>
 {% if note == 'model_down' %}<p class="card bad badtxt">本地模型没响应，类别没改。The local model didn't answer; categories unchanged.</p>{% endif %}
 {% for n in d.notes or [] %}<p class="card warn" style="margin-top:12px">{{n}}</p>{% endfor %}
