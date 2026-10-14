@@ -1,0 +1,66 @@
+{
+ "rows": [
+  {
+   "sku": "SF-112",
+   "name": "加绒连帽外套",
+   "spec": "L-4XL",
+   "pcs_per_bale": 50,
+   "bales": 4,
+   "qty_pcs": 200,
+   "unit_price_rmb": 40.4,
+   "amount_rmb": 8080.0,
+   "carton_cm": "70×50×50",
+   "cbm": null
+  },
+  {
+   "sku": "BZ-514",
+   "name": "陶瓷马克杯 带盖勺",
+   "spec": "350ml",
+   "pcs_per_bale": 48,
+   "bales": 5,
+   "qty_pcs": 240,
+   "unit_price_rmb": 7.9,
+   "amount_rmb": 1896.0,
+   "carton_cm": "45×35×30",
+   "cbm": null
+  },
+  {
+   "sku": "MZ-108",
+   "name": "2L 加厚橡胶热水袋 带针织套",
+   "spec": "2000ml",
+   "pcs_per_bale": 100,
+   "bales": 1,
+   "qty_pcs": 100,
+   "unit_price_rmb": 6.8,
+   "amount_rmb": 680.0,
+   "carton_cm": "50×40×38",
+   "cbm": null
+  },
+  {
+   "sku": "BZ-952",
+   "name": "瑜伽健身裤",
+   "spec": "S-XL 6色",
+   "pcs_per_bale": 200,
+   "bales": 2,
+   "qty_pcs": 400,
+   "unit_price_rmb": 11.9,
+   "amount_rmb": 4760.0,
+   "carton_cm": "55×40×35",
+   "cbm": null
+  },
+  {
+   "sku": "BZ-879",
+   "name": "儿童卡通棉袜",
+   "spec": "S-L 5双装",
+   "pcs_per_bale": 400,
+   "bales": 5,
+   "qty_pcs": 2000,
+   "unit_price_rmb": 2.3,
+   "amount_rmb": 4600.0,
+   "carton_cm": "50×40×35",
+   "cbm": null
+  }
+ ],
+ "total_amount_rmb": 20016.0,
+ "total_cbm": null
+}

@@ -1,0 +1,78 @@
+{
+ "rows": [
+  {
+   "sku": "MZ-792",
+   "name": "坑条休闲运动套装",
+   "spec": "S-XL 4色",
+   "pcs_per_bale": 120,
+   "bales": 3,
+   "qty_pcs": 360,
+   "unit_price_rmb": 21.05,
+   "amount_rmb": 7578.0,
+   "carton_cm": "",
+   "cbm": 0.324
+  },
+  {
+   "sku": "MZ-393",
+   "name": "陶瓷马克杯 带盖勺",
+   "spec": "350ml",
+   "pcs_per_bale": 48,
+   "bales": 5,
+   "qty_pcs": 240,
+   "unit_price_rmb": 7.2,
+   "amount_rmb": 1728.0,
+   "carton_cm": "",
+   "cbm": 0.236
+  },
+  {
+   "sku": "BZ-801",
+   "name": "瑜伽健身裤",
+   "spec": "S-XL 6色",
+   "pcs_per_bale": 200,
+   "bales": 2,
+   "qty_pcs": 400,
+   "unit_price_rmb": 12.75,
+   "amount_rmb": 5100.0,
+   "carton_cm": "",
+   "cbm": 0.154
+  },
+  {
+   "sku": "BZ-466",
+   "name": "加绒连帽外套",
+   "spec": "L-4XL",
+   "pcs_per_bale": 50,
+   "bales": 1,
+   "qty_pcs": 50,
+   "unit_price_rmb": 56.55,
+   "amount_rmb": 2827.5,
+   "carton_cm": "",
+   "cbm": 0.175
+  },
+  {
+   "sku": "W-390",
+   "name": "针织毛线帽",
+   "spec": "均码 混色",
+   "pcs_per_bale": 480,
+   "bales": 2,
+   "qty_pcs": 960,
+   "unit_price_rmb": 2.85,
+   "amount_rmb": 2736.0,
+   "carton_cm": "",
+   "cbm": 0.192
+  },
+  {
+   "sku": "BZ-682",
+   "name": "女士船袜",
+   "spec": "均码 混色",
+   "pcs_per_bale": 1200,
+   "bales": 3,
+   "qty_pcs": 3600,
+   "unit_price_rmb": 0.95,
+   "amount_rmb": 3420.0,
+   "carton_cm": "",
+   "cbm": 0.18
+  }
+ ],
+ "total_amount_rmb": 23389.5,
+ "total_cbm": 1.261
+}

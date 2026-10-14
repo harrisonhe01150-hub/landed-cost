@@ -2,7 +2,7 @@
 
 Every document is invented and watermarked 样例 / SAMPLE. Used only to measure how well a local vision model
 transcribes the kind of paperwork a stall receives; it says nothing about real prices.
-Usage: python make_testset.py <out_dir>
+Usage: python make_testset.py <out_dir> [seed]   (the tuning set uses the default seed; held-out sets use others)
 """
 import json
 import math
@@ -122,9 +122,9 @@ CASES = [  # name, kind, rows, handwritten, with_amount, photo strength (0 = cle
 ]
 
 
-def main(out: Path) -> None:
+def main(out: Path, seed: int = 20261013) -> None:
     out.mkdir(parents=True, exist_ok=True)
-    rng = random.Random(20261013)
+    rng = random.Random(seed)
     with sync_playwright() as pw:
         b = pw.chromium.launch()
         page = b.new_page(viewport={"width": 1000, "height": 700}, device_scale_factor=1.5)
@@ -144,4 +144,4 @@ def main(out: Path) -> None:
 
 
 if __name__ == "__main__":
-    main(Path(sys.argv[1]))
+    main(Path(sys.argv[1]), int(sys.argv[2]) if len(sys.argv) > 2 else 20261013)

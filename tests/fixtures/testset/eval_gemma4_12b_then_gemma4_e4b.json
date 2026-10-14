@@ -3,13 +3,13 @@
   "model": "gemma4:12b+gemma4:e4b",
   "docs": 8,
   "crashed": 0,
-  "numeric_field_acc": 0.9925,
+  "numeric_field_acc": 1.0,
   "silent_errors": 0,
   "rows_missing": 0,
-  "totals_right": 7,
+  "totals_right": 8,
   "sku_acc": 1.0,
-  "name_char_acc": 0.973,
-  "median_secs": 10.1
+  "name_char_acc": 0.977,
+  "median_secs": 9.9
  },
  "docs": [
   {
@@ -25,7 +25,7 @@
    "flagged": 0,
    "doc": "t01_delivery_clean",
    "model": "gemma4:12b+gemma4:e4b",
-   "secs": 4.7
+   "secs": 11.6
   },
   {
    "rows_want": 6,
@@ -40,7 +40,7 @@
    "flagged": 0,
    "doc": "t02_delivery_photo",
    "model": "gemma4:12b+gemma4:e4b",
-   "secs": 5.3
+   "secs": 6.0
   },
   {
    "rows_want": 6,
@@ -55,7 +55,7 @@
    "flagged": 0,
    "doc": "t03_packing_clean",
    "model": "gemma4:12b+gemma4:e4b",
-   "secs": 14.9
+   "secs": 11.5
   },
   {
    "rows_want": 7,
@@ -70,7 +70,7 @@
    "flagged": 0,
    "doc": "t04_packing_photo",
    "model": "gemma4:12b+gemma4:e4b",
-   "secs": 11.1
+   "secs": 11.5
   },
   {
    "rows_want": 5,
@@ -80,27 +80,27 @@
    "fields_right": 25,
    "silent_errors": 0,
    "sku_right": 5,
-   "name_char_acc": 0.95,
+   "name_char_acc": 0.975,
    "total_right": true,
    "flagged": 0,
    "doc": "t05_hand_delivery",
    "model": "gemma4:12b+gemma4:e4b",
-   "secs": 4.6
+   "secs": 4.9
   },
   {
    "rows_want": 6,
    "rows_got": 6,
    "rows_missing": 0,
    "fields": 30,
-   "fields_right": 28,
+   "fields_right": 30,
    "silent_errors": 0,
    "sku_right": 6,
    "name_char_acc": 0.951,
-   "total_right": false,
-   "flagged": 3,
+   "total_right": true,
+   "flagged": 0,
    "doc": "t06_hand_delivery_photo",
    "model": "gemma4:12b+gemma4:e4b",
-   "secs": 15.6
+   "secs": 6.0
   },
   {
    "rows_want": 5,
@@ -115,7 +115,7 @@
    "flagged": 0,
    "doc": "t07_no_amount_column",
    "model": "gemma4:12b+gemma4:e4b",
-   "secs": 10.1
+   "secs": 5.3
   },
   {
    "rows_want": 12,
@@ -125,12 +125,12 @@
    "fields_right": 60,
    "silent_errors": 0,
    "sku_right": 12,
-   "name_char_acc": 0.995,
+   "name_char_acc": 1.0,
    "total_right": true,
    "flagged": 0,
    "doc": "t08_long_list",
    "model": "gemma4:12b+gemma4:e4b",
-   "secs": 8.9
+   "secs": 9.9
   }
  ]
 }

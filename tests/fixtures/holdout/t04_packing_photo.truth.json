@@ -1,0 +1,90 @@
+{
+ "rows": [
+  {
+   "sku": "TB-142",
+   "name": "PVC 印花桌布",
+   "spec": "137×180cm",
+   "pcs_per_bale": 200,
+   "bales": 5,
+   "qty_pcs": 1000,
+   "unit_price_rmb": 5.4,
+   "amount_rmb": 5400.0,
+   "carton_cm": "",
+   "cbm": 0.3
+  },
+  {
+   "sku": "HB-269",
+   "name": "男士纯棉中筒袜",
+   "spec": "均码 黑白灰",
+   "pcs_per_bale": 300,
+   "bales": 2,
+   "qty_pcs": 600,
+   "unit_price_rmb": 2.1,
+   "amount_rmb": 1260.0,
+   "carton_cm": "",
+   "cbm": 0.154
+  },
+  {
+   "sku": "YG-792",
+   "name": "坑条休闲运动套装",
+   "spec": "S-XL 4色",
+   "pcs_per_bale": 120,
+   "bales": 4,
+   "qty_pcs": 480,
+   "unit_price_rmb": 22.95,
+   "amount_rmb": 11016.0,
+   "carton_cm": "",
+   "cbm": 0.432
+  },
+  {
+   "sku": "W-438",
+   "name": "2L 加厚橡胶热水袋 带针织套",
+   "spec": "2000ml",
+   "pcs_per_bale": 60,
+   "bales": 4,
+   "qty_pcs": 240,
+   "unit_price_rmb": 6.9,
+   "amount_rmb": 1656.0,
+   "carton_cm": "",
+   "cbm": 0.304
+  },
+  {
+   "sku": "SF-230",
+   "name": "瑜伽健身裤",
+   "spec": "S-XL 6色",
+   "pcs_per_bale": 100,
+   "bales": 3,
+   "qty_pcs": 300,
+   "unit_price_rmb": 12.8,
+   "amount_rmb": 3840.0,
+   "carton_cm": "",
+   "cbm": 0.231
+  },
+  {
+   "sku": "HB-775",
+   "name": "高腰收腹打底短裤",
+   "spec": "均码 黑肤",
+   "pcs_per_bale": 120,
+   "bales": 1,
+   "qty_pcs": 120,
+   "unit_price_rmb": 6.75,
+   "amount_rmb": 810.0,
+   "carton_cm": "",
+   "cbm": 0.052
+  },
+  {
+   "sku": "BZ-159",
+   "name": "针织毛线帽",
+   "spec": "均码 混色",
+   "pcs_per_bale": 480,
+   "bales": 3,
+   "qty_pcs": 1440,
+   "unit_price_rmb": 3.0,
+   "amount_rmb": 4320.0,
+   "carton_cm": "",
+   "cbm": 0.288
+  }
+ ],
+ "total_amount_rmb": 28302.0,
+ "total_cbm": 1.761
+}

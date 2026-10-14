@@ -3,13 +3,13 @@
   "model": "gemma4:12b",
   "docs": 8,
   "crashed": 0,
-  "numeric_field_acc": 0.8657,
+  "numeric_field_acc": 0.8881,
   "silent_errors": 0,
   "rows_missing": 0,
-  "totals_right": 7,
+  "totals_right": 8,
   "sku_acc": 1.0,
-  "name_char_acc": 0.973,
-  "median_secs": 5.9
+  "name_char_acc": 0.977,
+  "median_secs": 5.8
  },
  "docs": [
   {
@@ -25,7 +25,7 @@
    "flagged": 0,
    "doc": "t01_delivery_clean",
    "model": "gemma4:12b",
-   "secs": 10.9
+   "secs": 4.9
   },
   {
    "rows_want": 6,
@@ -55,7 +55,7 @@
    "flagged": 13,
    "doc": "t03_packing_clean",
    "model": "gemma4:12b",
-   "secs": 5.9
+   "secs": 6.1
   },
   {
    "rows_want": 7,
@@ -70,7 +70,7 @@
    "flagged": 0,
    "doc": "t04_packing_photo",
    "model": "gemma4:12b",
-   "secs": 5.9
+   "secs": 6.4
   },
   {
    "rows_want": 5,
@@ -80,27 +80,27 @@
    "fields_right": 25,
    "silent_errors": 0,
    "sku_right": 5,
-   "name_char_acc": 0.95,
+   "name_char_acc": 0.975,
    "total_right": true,
    "flagged": 0,
    "doc": "t05_hand_delivery",
    "model": "gemma4:12b",
-   "secs": 4.8
+   "secs": 5.2
   },
   {
    "rows_want": 6,
    "rows_got": 6,
    "rows_missing": 0,
    "fields": 30,
-   "fields_right": 24,
+   "fields_right": 30,
    "silent_errors": 0,
    "sku_right": 6,
    "name_char_acc": 0.951,
-   "total_right": false,
-   "flagged": 7,
+   "total_right": true,
+   "flagged": 0,
    "doc": "t06_hand_delivery_photo",
    "model": "gemma4:12b",
-   "secs": 5.5
+   "secs": 5.8
   },
   {
    "rows_want": 5,
@@ -115,7 +115,7 @@
    "flagged": 0,
    "doc": "t07_no_amount_column",
    "model": "gemma4:12b",
-   "secs": 4.8
+   "secs": 5.2
   },
   {
    "rows_want": 12,
@@ -125,12 +125,12 @@
    "fields_right": 60,
    "silent_errors": 0,
    "sku_right": 12,
-   "name_char_acc": 0.995,
+   "name_char_acc": 1.0,
    "total_right": true,
    "flagged": 0,
    "doc": "t08_long_list",
    "model": "gemma4:12b",
-   "secs": 9.3
+   "secs": 9.7
   }
  ]
 }

@@ -1,0 +1,66 @@
+{
+ "rows": [
+  {
+   "sku": "BZ-784",
+   "name": "女士船袜",
+   "spec": "均码 混色",
+   "pcs_per_bale": 1200,
+   "bales": 5,
+   "qty_pcs": 6000,
+   "unit_price_rmb": 1.2,
+   "amount_rmb": 7200.0,
+   "carton_cm": "50×40×30",
+   "cbm": null
+  },
+  {
+   "sku": "W-216",
+   "name": "瑜伽健身裤",
+   "spec": "S-XL 6色",
+   "pcs_per_bale": 200,
+   "bales": 5,
+   "qty_pcs": 1000,
+   "unit_price_rmb": 10.0,
+   "amount_rmb": 10000.0,
+   "carton_cm": "55×40×35",
+   "cbm": null
+  },
+  {
+   "sku": "SF-956",
+   "name": "陶瓷马克杯 带盖勺",
+   "spec": "350ml",
+   "pcs_per_bale": 48,
+   "bales": 3,
+   "qty_pcs": 144,
+   "unit_price_rmb": 4.4,
+   "amount_rmb": 633.6,
+   "carton_cm": "45×35×30",
+   "cbm": null
+  },
+  {
+   "sku": "W-745",
+   "name": "高腰收腹打底短裤",
+   "spec": "均码 黑肤",
+   "pcs_per_bale": 240,
+   "bales": 3,
+   "qty_pcs": 720,
+   "unit_price_rmb": 5.55,
+   "amount_rmb": 3996.0,
+   "carton_cm": "50×35×30",
+   "cbm": null
+  },
+  {
+   "sku": "TB-700",
+   "name": "2L 加厚橡胶热水袋 带针织套",
+   "spec": "2000ml",
+   "pcs_per_bale": 60,
+   "bales": 3,
+   "qty_pcs": 180,
+   "unit_price_rmb": 7.0,
+   "amount_rmb": 1260.0,
+   "carton_cm": "50×40×38",
+   "cbm": null
+  }
+ ],
+ "total_amount_rmb": 23089.6,
+ "total_cbm": null
+}

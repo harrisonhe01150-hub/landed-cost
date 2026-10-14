@@ -1,0 +1,78 @@
+{
+ "rows": [
+  {
+   "sku": "BZ-272",
+   "name": "PVC 印花桌布",
+   "spec": "137×180cm",
+   "pcs_per_bale": 200,
+   "bales": 4,
+   "qty_pcs": 800,
+   "unit_price_rmb": 3.35,
+   "amount_rmb": 2680.0,
+   "carton_cm": "50×40×30",
+   "cbm": null
+  },
+  {
+   "sku": "TB-190",
+   "name": "男士纯棉中筒袜",
+   "spec": "均码 黑白灰",
+   "pcs_per_bale": 300,
+   "bales": 4,
+   "qty_pcs": 1200,
+   "unit_price_rmb": 1.25,
+   "amount_rmb": 1500.0,
+   "carton_cm": "55×40×35",
+   "cbm": null
+  },
+  {
+   "sku": "BZ-863",
+   "name": "儿童卡通棉袜",
+   "spec": "S-L 5双装",
+   "pcs_per_bale": 400,
+   "bales": 2,
+   "qty_pcs": 800,
+   "unit_price_rmb": 2.5,
+   "amount_rmb": 2000.0,
+   "carton_cm": "50×40×35",
+   "cbm": null
+  },
+  {
+   "sku": "MZ-413",
+   "name": "针织毛线帽",
+   "spec": "均码 混色",
+   "pcs_per_bale": 240,
+   "bales": 5,
+   "qty_pcs": 1200,
+   "unit_price_rmb": 3.5,
+   "amount_rmb": 4200.0,
+   "carton_cm": "60×40×40",
+   "cbm": null
+  },
+  {
+   "sku": "W-667",
+   "name": "坑条休闲运动套装",
+   "spec": "S-XL 4色",
+   "pcs_per_bale": 100,
+   "bales": 1,
+   "qty_pcs": 100,
+   "unit_price_rmb": 25.9,
+   "amount_rmb": 2590.0,
+   "carton_cm": "60×45×40",
+   "cbm": null
+  },
+  {
+   "sku": "YG-762",
+   "name": "2L 加厚橡胶热水袋 带针织套",
+   "spec": "2000ml",
+   "pcs_per_bale": 60,
+   "bales": 1,
+   "qty_pcs": 60,
+   "unit_price_rmb": 8.9,
+   "amount_rmb": 534.0,
+   "carton_cm": "50×40×38",
+   "cbm": null
+  }
+ ],
+ "total_amount_rmb": 13504.0,
+ "total_cbm": null
+}

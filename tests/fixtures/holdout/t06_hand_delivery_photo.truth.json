@@ -1,0 +1,78 @@
+{
+ "rows": [
+  {
+   "sku": "MZ-481",
+   "name": "加绒连帽外套",
+   "spec": "L-4XL",
+   "pcs_per_bale": 30,
+   "bales": 3,
+   "qty_pcs": 90,
+   "unit_price_rmb": 49.35,
+   "amount_rmb": 4441.5,
+   "carton_cm": "70×50×50",
+   "cbm": null
+  },
+  {
+   "sku": "MZ-975",
+   "name": "高腰收腹打底短裤",
+   "spec": "均码 黑肤",
+   "pcs_per_bale": 120,
+   "bales": 2,
+   "qty_pcs": 240,
+   "unit_price_rmb": 5.0,
+   "amount_rmb": 1200.0,
+   "carton_cm": "50×35×30",
+   "cbm": null
+  },
+  {
+   "sku": "BZ-161",
+   "name": "陶瓷马克杯 带盖勺",
+   "spec": "350ml",
+   "pcs_per_bale": 72,
+   "bales": 1,
+   "qty_pcs": 72,
+   "unit_price_rmb": 7.95,
+   "amount_rmb": 572.4,
+   "carton_cm": "45×35×30",
+   "cbm": null
+  },
+  {
+   "sku": "BZ-931",
+   "name": "PVC 印花桌布",
+   "spec": "137×180cm",
+   "pcs_per_bale": 200,
+   "bales": 2,
+   "qty_pcs": 400,
+   "unit_price_rmb": 4.15,
+   "amount_rmb": 1660.0,
+   "carton_cm": "50×40×30",
+   "cbm": null
+  },
+  {
+   "sku": "BZ-110",
+   "name": "男士纯棉中筒袜",
+   "spec": "均码 黑白灰",
+   "pcs_per_bale": 600,
+   "bales": 3,
+   "qty_pcs": 1800,
+   "unit_price_rmb": 1.4,
+   "amount_rmb": 2520.0,
+   "carton_cm": "55×40×35",
+   "cbm": null
+  },
+  {
+   "sku": "K-344",
+   "name": "坑条休闲运动套装",
+   "spec": "S-XL 4色",
+   "pcs_per_bale": 100,
+   "bales": 4,
+   "qty_pcs": 400,
+   "unit_price_rmb": 15.7,
+   "amount_rmb": 6280.0,
+   "carton_cm": "60×45×40",
+   "cbm": null
+  }
+ ],
+ "total_amount_rmb": 16673.9,
+ "total_cbm": null
+}
