@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Landed Cost demo</title>
+<style>
+:root{--bg:#f5f4ef;--ink:#1d2320;--mute:#66706a;--acc:#1f6f5f}
+@media (prefers-color-scheme:dark){:root{--bg:#161a18;--ink:#e8ebe8;--mute:#9aa39d;--acc:#5fbfa9}}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 system-ui,-apple-system,'Segoe UI',sans-serif}
+main{max-width:1000px;margin:0 auto;padding:28px 16px 48px}h1{font-size:26px;margin:0 0 6px}p{margin:8px 0}
+video{width:100%;border-radius:10px;background:#000;margin:14px 0}a{color:var(--acc)}.mute{color:var(--mute);font-size:14px}
+</style></head><body><main>
+<h1>Landed Cost · 落地成本</h1>
+<p>Photo of a Yiwu supplier's delivery note → landed cost per piece in rand → wholesale price per bale. Two local Gemma 4 models read the table; code checks the numbers.</p>
+<video src="demo.webm" controls autoplay muted loop playsinline></video>
+<p class="mute">One real run on my computer, 45 s, with about 25 s of the models reading cut out. A <b>synthetic</b> packing list (watermarked 样例 SAMPLE): Gemma 4 12B reads it, E4B re-reads the rows that didn't add up (yellow), I change one quantity on purpose so the row turns red, put it back, then the landed cost and the WhatsApp summary. Shipping settings are an example: the ECB reference rate of the day and one forwarder's published rates, not real prices.</p>
+<p><a href="https://github.com/harrisonhe01150-hub/landed-cost">Code on GitHub</a> · MIT</p>
+</main></body></html>

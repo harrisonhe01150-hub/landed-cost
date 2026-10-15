@@ -37,6 +37,18 @@ app.config["TRUSTED_HOSTS"] = ["127.0.0.1", "localhost"]  # blocks DNS-rebinding
 _IO = threading.Lock()
 
 
+def show_num(v) -> str:
+    """50.0 -> '50', 23.5 -> '23.5', 4441.5 -> '4441.5' (no rounding away of real digits), None -> ''."""
+    if v is None:
+        return ""
+    if isinstance(v, float):
+        return str(int(v)) if v.is_integer() else f"{v:.6f}".rstrip("0").rstrip(".")
+    return str(v)
+
+
+app.jinja_env.filters["n"] = show_num
+
+
 # ---------- storage: one lock, atomic writes, tolerant reads ----------
 
 def read_json(path: Path, default=None):
@@ -418,8 +430,9 @@ HOME_HTML = """<!doctype html><html><head><meta charset=utf-8><meta name=viewpor
 {% if error %}<p class="card bad badtxt">{{error}}</p>{% endif %}
 {% if missing %}<p class="card badtxt">还没填：{{missing|join('、')}}。先去 <a href=/settings>设置</a> 填好，才能算成本。 Fill these in Settings first.</p>{% endif %}
 <h2>新单据 New delivery note</h2>
-<form class=drop method=post action=/read enctype=multipart/form-data><p>送货单 / 装箱单照片 · photo of a 送货单 or packing list</p>
+<form class=drop method=post action=/read enctype=multipart/form-data onsubmit="this.querySelector('button').disabled=true;document.getElementById('busy').hidden=false"><p>送货单 / 装箱单照片 · photo of a 送货单 or packing list</p>
 <input type=file name=photo accept="image/*" required style="max-width:340px"><p><button>读取 Read it</button></p>
+<p id=busy hidden class=badtxt style="font-size:17px">正在这台电脑上读取，大约 10–30 秒… Reading on this computer…</p>
 <p class=mute>本地 Gemma 4 读表，大约 10–30 秒。Read by Gemma 4 on this computer.</p></form>
 <h2>最近 Recent</h2><div class=card>{% for d in docs %}<div><a href="/doc/{{d.id}}">{{d.title}}</a> <span class=mute>{{d.date}} · {{d.rows}} 行{% if d.problems %} · <span class=badtxt>{{d.problems}} 处要核对</span>{% endif %}</span></div>{% else %}<span class=mute>还没有单据。</span>{% endfor %}</div>
 </main></body></html>"""
@@ -439,18 +452,18 @@ DOC_HTML = """<!doctype html><html><head><meta charset=utf-8><meta name=viewport
 <div class=scroll><table class=edit><tr><th>款号</th><th>品名</th><th>件/包</th><th>包数</th><th>数量</th><th>单位</th><th>单价¥</th><th>金额¥</th><th>箱规cm</th><th>体积m³</th>{% if cats %}<th>类别</th>{% endif %}<th>删</th></tr>
 {% for r in d.rows %}{% set i = loop.index0 %}<tr {% if r.problems %}class=bad title="{{r.problems|join('; ')}}"{% elif r.second_opinion %}class=warn title="第二个模型 {{r.second_opinion}} 重读的数 · numbers from a second read"{% endif %}>
 <td><input name=sku{{i}} value="{{r.sku}}"></td><td><input name=name{{i}} value="{{r.name}}"><input type=hidden name=spec{{i}} value="{{r.spec}}"></td>
-{% for k, form in [('pcs_per_bale','per'),('bales','bales'),('qty_pcs','qty')] %}<td><input name={{form}}{{i}} value="{{r[k] if r[k] is not none else ''}}"></td>{% endfor %}
+{% for k, form in [('pcs_per_bale','per'),('bales','bales'),('qty_pcs','qty')] %}<td><input name={{form}}{{i}} value="{{r[k]|n}}"></td>{% endfor %}
 <td><input name=unit{{i}} value="{{r.unit or ''}}" placeholder="件"></td>
-{% for k, form in [('unit_price_rmb','price'),('amount_rmb','amount')] %}<td><input name={{form}}{{i}} value="{{r[k] if r[k] is not none else ''}}"></td>{% endfor %}
-<td><input name=carton{{i}} value="{{r.carton_cm}}"></td><td><input name=cbm{{i}} value="{{r.cbm if r.cbm is not none else ''}}"></td>
+{% for k, form in [('unit_price_rmb','price'),('amount_rmb','amount')] %}<td><input name={{form}}{{i}} value="{{r[k]|n}}"></td>{% endfor %}
+<td><input name=carton{{i}} value="{{r.carton_cm}}"></td><td><input name=cbm{{i}} value="{{r.cbm|n}}"></td>
 {% if cats %}<td><select name=cat{{i}}><option value="">未分类</option>{% for c in cats %}<option {% if r.category==c %}selected{% endif %}>{{c}}</option>{% endfor %}</select></td>{% else %}<input type=hidden name=cat{{i}} value="{{r.category or ''}}">{% endif %}
 <td><input type=checkbox name=del{{i}}></td></tr>{% endfor %}
 {% for i in blank %}<tr><td><input name=sku{{i}} placeholder="+ 补一行"></td><td><input name=name{{i}}><input type=hidden name=spec{{i}} value=""></td>
 <td><input name=per{{i}}></td><td><input name=bales{{i}}></td><td><input name=qty{{i}}></td><td><input name=unit{{i}} placeholder="件"></td><td><input name=price{{i}}></td><td><input name=amount{{i}}></td>
 <td><input name=carton{{i}}></td><td><input name=cbm{{i}}></td>{% if cats %}<td><select name=cat{{i}}><option value="">未分类</option>{% for c in cats %}<option>{{c}}</option>{% endfor %}</select></td>{% else %}<input type=hidden name=cat{{i}} value="">{% endif %}<td></td></tr>{% endfor %}
 </table></div>
-<div style="display:flex;gap:10px;margin-top:8px;align-items:end;flex-wrap:wrap"><label style="flex:1;min-width:8em">合计¥ total<input name=total value="{{d.total_amount_rmb if d.total_amount_rmb is not none else ''}}"></label>
-<label style="flex:1;min-width:8em">总体积 方 CBM<input name=total_cbm value="{{d.total_cbm if d.total_cbm is not none else ''}}"></label>
+<div style="display:flex;gap:10px;margin-top:8px;align-items:end;flex-wrap:wrap"><label style="flex:1;min-width:8em">合计¥ total<input name=total value="{{d.total_amount_rmb|n}}"></label>
+<label style="flex:1;min-width:8em">总体积 方 CBM<input name=total_cbm value="{{d.total_cbm|n}}"></label>
 {% if s.mode == 'itemized' and s.clearing_fixed_zar %}<label style="flex:1;min-width:10em">本单占整票货 %（分摊清关费）<input name=share value="{{d.shipment_share_pct if d.shipment_share_pct else ''}}" placeholder="例如 25"></label>{% else %}<input type=hidden name=share value="{{d.shipment_share_pct or ''}}">{% endif %}
 <button>保存并重算 Save</button></div>
 <div class=mute style="margin-top:6px">各行加起来 ¥{{'{:,.2f}'.format(d.rows_total_rmb or 0)}}{% if d.rows|selectattr('second_opinion')|list %} · <span class=warn style="padding:0 6px">黄色行</span> 第一遍没对上，用第二个本地模型重读后通过了核对，请看一眼。{% endif %}</div></form>

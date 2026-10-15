@@ -182,3 +182,7 @@ def test_default_port_is_one_browsers_will_open():
                526, 530, 531, 532, 540, 548, 554, 556, 563, 587, 601, 636, 989, 990, 993, 995, 1719, 1720, 1723, 2049,
                3659, 4045, 4190, 5060, 5061, 6000, 6566, 6665, 6666, 6667, 6668, 6669, 6679, 6697, 10080}
     assert lc_app.PORT not in blocked
+
+
+def test_numbers_in_the_edit_form_show_without_trailing_zeros_but_keep_their_digits():
+    assert [lc_app.show_num(v) for v in (50.0, 23.5, 4441.5, 0.0525, None, 7)] == ["50", "23.5", "4441.5", "0.0525", "", "7"]
